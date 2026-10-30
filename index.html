@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f7f1">
+  <meta name="description" content="Find something delicious, plan your week, and make one tidy shopping list.">
+  <meta property="og:title" content="Good Measure | Recipe Finder & Meal Planner">
+  <meta property="og:description" content="Find a recipe, plan your week, and shop with confidence.">
+  <title>Good Measure | Recipe Finder & Meal Planner</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar">
+    <a class="brand" href="#/" aria-label="Good Measure home">
+      <span class="brand-mark" aria-hidden="true">g</span>
+      <span>good<span class="brand-light">measure</span></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#/" data-route="home">Discover</a>
+      <a href="#/search" data-route="search">Recipes</a>
+      <a href="#/planner" data-route="planner">Meal plan</a>
+      <a href="#/grocery" data-route="grocery">Shopping list <span class="nav-count" id="grocery-count">0</span></a>
+      <a href="#/favorites" data-route="favorites">Saved</a>
+    </nav>
+    <a class="settings-link" href="#/settings" aria-label="Settings" title="Settings"><span aria-hidden="true">⚙</span></a>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <div id="app" aria-live="polite" aria-busy="false"></div>
+  </main>
+
+  <nav class="mobile-nav" aria-label="Main navigation">
+    <a href="#/" data-route="home"><span aria-hidden="true">⌂</span><small>Home</small></a>
+    <a href="#/search" data-route="search"><span aria-hidden="true">⌕</span><small>Search</small></a>
+    <a href="#/planner" data-route="planner"><span aria-hidden="true">▦</span><small>Plan</small></a>
+    <a href="#/grocery" data-route="grocery"><span aria-hidden="true">☷</span><small>Shop</small></a>
+    <a href="#/favorites" data-route="favorites"><span aria-hidden="true">♡</span><small>Saved</small></a>
+  </nav>
+
+  <footer class="site-footer">
+    <span>Good food, thoughtfully planned.</span>
+    <span><a href="privacy.html">Privacy</a><span class="footer-dot">·</span> Recipes and preferences stay on this device.</span>
+  </footer>
+
+  <div class="toast-region" id="toast-region" role="status" aria-live="polite" aria-atomic="true"></div>
+  <dialog class="recipe-dialog" id="recipe-dialog" aria-labelledby="dialog-title"></dialog>
+</body>
+</html>
